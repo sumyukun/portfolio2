@@ -8,6 +8,7 @@ body{
     display: flex;
     align-items: center;
     margin: auto; 
+    margin-top: 1vw;
 }
 .Wave{
     margin-right: 4vw;
@@ -157,4 +158,27 @@ nav{
     text-align: center;
     align-items: center;
     padding: 18px 29px;
+}
+.MainNumbers{
+    display: flex;
+    gap: 3vw;
+    margin-top: 82px;
+}
+.MainNumbers p{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 36.77px;
+    line-height: 45.96px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0;
+}
+.MainNumbers span{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12.26px;
+    line-height: 18.39px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #848586;
 }

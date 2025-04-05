@@ -1,17 +1,23 @@
 body{
     margin:0;
 }
+@media (min-width: 911px) {
 .HeaderContainer{
     box-sizing: border-box;
-    max-width: 75.53vw;
+    width: 900px;
     height: 4vw;
     display: flex;
     align-items: center;
-    margin: auto; 
-    margin-top: 1vw;
+    margin: 2vw auto 0 auto;
 }
 .Wave{
-    margin-right: 4vw;
+    margin-right: 0vw;
+}
+.DiveSeaTitle{
+    display: none;
+}
+.BurgerMenu{
+    display: none;
 }
 .MainNav{
      font-family: Inter;
@@ -21,7 +27,7 @@ body{
     letter-spacing: 0%;
     text-transform: uppercase;
     text-decoration: none;
-     display: flex;
+    display: flex;
     align-items: center;  
 }
 .MainNav a{
@@ -38,15 +44,19 @@ body{
     gap: 0px;
 }
 .MainNav li {
-    margin-right: 4vw;
+    margin: 1vw;
 
 }
 .MainNav li:last-child {
-    margin-right: 8vw;
+    margin-right: 4vw;
 }
 nav{
-     display: flex;
+    display: flex;
     align-items: center; 
+}
+nav :last-child{
+    margin-right: 0px;
+    padding-right: 0px;
 }
 .SearchContainer {
     display: flex; 
@@ -61,15 +71,13 @@ nav{
     color: #C2C3CB;
     border: 0;
     border-radius: 15px;
-    padding: 18px 81px;
+    padding: 18px 50px;
     padding-left: 40px;
 }
-
 .Search:focus {
     outline: none;
     border: 1px solid black;
 }
-
 .SearchIcon {
     position: absolute;
     left: 10px;
@@ -99,6 +107,9 @@ nav{
     margin-top: 8.4vw;
     margin-left: 9.24vw;
 }
+.MainSubtitle{
+    display: none;
+}
 .MainTitle h1{
     font-family: Poppins;
     font-weight: 600;
@@ -109,7 +120,6 @@ nav{
     margin-top: 10px;
     margin: 0;
     margin-bottom: 16px;
-    width: 570px;
 }
 .MainLeft{
     width: 600px;
@@ -187,41 +197,78 @@ nav{
     color: #848586;
 }
 .ImagesContainer{
-    margin-left: 2vw;
+    margin-left: 0vw;
     position: relative;
     display: flex;
 }
 .Image1{
-    width: 391px;
-    height: 394.587158203125px;
+    width: 30vw;
+    height: 30vw;
     border-radius: 25px;
     object-fit: cover;
     pointer-events: none;
-    box-shadow: 10px 15px 83.7px 5px #999898;
-}
-.ArrowImg{
-    margin-left: 22px;
-    width: 128px;
-    height: 124px;
-    margin-top: 20px;
+    box-shadow: 10px 15px 83.7px 5px #96b0c5;
 }
 .MainScreenContainer{
     display: flex;
 }
-.Image2{
-    width: 300px;
-    height: 342px;
-    object-fit: cover;
-    pointer-events: none;
-    border-radius: 22.35px;
-    margin-left: 2vw;
-    box-shadow: 5px 10px 80.7px 5px #999898;
-    max-width: 100%;
-    overflow: hidden;
 }
-.DotsBack{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 40vw;
-}
+@media (max-width: 910px){
+    nav{
+        display: none;
+    }
+    .HeaderContainer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 6vw 5vw 20vw 5vw;
+    }
+    .Wave{
+    }
+    .DiveSeaTitle{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 21.36px;
+        line-height: 130%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-left: 3vw;
+    }
+    .MainTitle h1{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 120%;
+        letter-spacing: -3px;
+        text-transform: capitalize;
+        margin-top: 10px;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .BurgerMenu{
+        margin-left: auto;
+    }
+   .Line{
+    display: none;
+   }
+    .MainSubtitle{
+        margin: auto;
+        text-align: center;
+        width: fit-content;
+    }
+    .MainSubtitle span{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 9.25px;
+        line-height: 120%;
+        letter-spacing: 1.23px;
+        color: #201F1F;
+    }
+    .Image1{
+        max-width: 800px;
+        width: 80vw;
+        object-fit: cover;
+        height: 80vw;
+    }
+    }
+ 
